@@ -1,0 +1,44 @@
+// Colors -----------------------------------
+// From One Dark Candy, slightly tweaked
+// https://marketplace.visualstudio.com/items?itemName=KacperBiedka.one-candy-dark
+@color-2-text: #d0cbd7;
+@color-2-pink:	#fcade7;
+@color-2-violet:	#bfabf8;
+@color-2-teal:	#66b9e0;
+@color-2-peach:	#ffbeb8;
+@color-2-green-2:	#79c3a4;
+@color-2-green:	#99c88f;
+@color-2-sand:	#fcdfad;
+// extra colors
+@color-3-blue: hsl(222, 85%, 76%);
+
+
+// Config -----------------------------------
+// Background color, copied from One Dark theme
+@syntax-hue:          220;
+@syntax-saturation:   13%;
+@syntax-brightness:   18%;
+
+
+// Monochrome -----------------------------------
+@mono-1:	@color-2-text; 		// default text  (usually for files without syntax highlight)
+@mono-2:	hsl(@syntax-hue,  9%, 55%);
+@mono-3:	hsl(@syntax-hue, 10%, 40%);
+
+// Colors -----------------------------------
+@hue-1:		@color-2-teal;	// function calls
+@hue-2:		@color-3-blue;	// function names, class names
+@hue-3:		@color-2-pink;	// imports, defs, etc
+@hue-4:		@color-2-green;	// strings
+@hue-5:		@color-2-peach; // variable definitions, string interpolation
+@hue-6:		@color-2-sand;	// function arguments, int, bool values
+@hue-7:		@color-2-violet;	// for regular text in supported languages
+
+
+// Base colors -----------------------------------
+@plain-fg:		@mono-1;
+@syntax-fg:     @hue-7;		// main text if syntax is highlighted
+@syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-gutter: darken(@color-2-text, 26%);
+@syntax-guide:  fade(@syntax-fg, 15%);
+@syntax-accent: hsl(@syntax-hue, 100%, 66% );
