@@ -7,7 +7,7 @@
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/vlad0337187/pulsar-theme-one-dark-candy",
+  "repository": "git@github.com:vlad0337187/pulsar-theme-one-dark-candy.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
